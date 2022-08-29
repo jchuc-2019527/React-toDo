@@ -45,7 +45,6 @@ const LogIn = () => {
       await reset(user.email);
       setErrorC = alert("Se ha enviado un correo para restablecer su contraseña");
     } catch (error) {
-      console.log(error);
     }
   };
 

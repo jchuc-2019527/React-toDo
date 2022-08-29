@@ -18,12 +18,12 @@ function General() {
 
   // Obtener datos del localStorage
   useEffect(() => {
-    const todoJSON = localStorage.getItem("todos","user");
+    const todoJSON = localStorage.getItem("todos");
+    const userJSON = localStorage.getItem("user");
     const getTodosLocal = JSON.parse(todoJSON);
+    const getUserLocal = JSON.parse(userJSON);
 
-    //console.log(found);
-
-    if(getTodosLocal.length > 0) {
+    if(getTodosLocal !=null && getTodosLocal !=null > 0) {
       setTodos(getTodosLocal);
     }
   }, []);
